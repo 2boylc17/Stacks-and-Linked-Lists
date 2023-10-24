@@ -17,9 +17,12 @@ class LinkedList:
 
     def get(self, index):
         current = self.first
-        for count in range(1, index):
+        for count in range(0, index):
             current = current.next
-        return print(current)
+            if current is None:
+                print("Could not be found")
+                return None
+        return current
 
 
 list1 = LinkedList()
@@ -27,4 +30,5 @@ n1 = Node("yes")
 n2 = Node("no")
 list1.add(n1)
 list1.add(n2)
-list1.get(1)
+print(list1.get(0))
+print(list1.get(3))
