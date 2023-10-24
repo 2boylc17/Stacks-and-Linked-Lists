@@ -1,4 +1,4 @@
-import Node
+from Week4.LinkedLists.Node import Node
 
 
 class LinkedList:
@@ -15,9 +15,16 @@ class LinkedList:
             self.last.link(node)
             self.last = node
 
+    def get(self, index):
+        current = self.first
+        for count in range(1, index):
+            current = current.next
+        return print(current)
+
 
 list1 = LinkedList()
-n1 = Node1("Fred")
-n2 = Node1("Tom")
-n1.link(n2)
+n1 = Node("yes")
+n2 = Node("no")
 list1.add(n1)
+list1.add(n2)
+list1.get(1)

@@ -1,4 +1,4 @@
-class Node1:
+class Node:
     def __init__(self, data):
         self.data = data
         self.prev = None
@@ -12,7 +12,7 @@ class Node1:
         newnode.prev = self
 
 
-"""n1 = Node1("Fred")
-n2 = Node1("Tom")
+"""n1 = Node("Fred")
+n2 = Node("Tom")
 n1.link(n2)
 """
